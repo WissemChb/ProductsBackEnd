@@ -1,0 +1,32 @@
+{
+  "name": "mean_hw",
+  "version": "1.0.0",
+  "description": "This a Hello World mean stack app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/angular/quickstart.git"
+  },
+  "author": "RT4 devTeam",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/angular/quickstart/issues"
+  },
+  "homepage": "https://github.com/angular/quickstart#readme",
+  "dependencies": {
+    "body-parser": "^1.16.1",
+    "cookie-parser": "^1.4.3",
+    "ejs": "^2.5.6",
+    "express": "^4.14.1",
+    "mongojs": "^2.4.0",
+    "morgan": "^1.8.1",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "cors": "^2.8.1"
+  }
+}
