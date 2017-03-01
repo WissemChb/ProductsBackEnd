@@ -9,7 +9,7 @@ var db = mongojs('mongodb://localhost:27017/libraryApp', ['Products']);
 
 // GET ALL Products
 
-router.get('/products',function (req,res) {
+router.get('/Products',function (req,res) {
     db.Products.find(function (err,Products) {
         if(err){
             res.send(err);
