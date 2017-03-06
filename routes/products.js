@@ -21,10 +21,11 @@ router.get('/Products',function (req,res) {
 
 // GET ONE PRODUCT
 
-router.get('/Products/:id',function (req,res,next) {
-    db.Products.findOne({_id:mongojs.ObjectId(req.params.id)},
-        function(err,Product){
+router.get('/Products/:id',function (req,res) {
+    db.Products.findOne({_id : mongojs.ObjectId(req.params.id)},function(err,Product){
+        console.log(req.params.id);
             if(err){
+                debugger
                 res.send(err);
             }else{
                 res.json(Product);
@@ -84,9 +85,8 @@ router.put('Products/:id',function(req,res) {
 //DELETE a Product
 
 router.delete('/Products/:id',function (req,res) {
-    db.Products.remove({
-            __id : mongojs.ObjectId(req.params.id)},'',
-        function (err,result) {
+    debugger
+    db.Products.findOneAndDelete({id : req.params.id},function (err,result) {
             if(err){
                 res.send(err);
             }else{
