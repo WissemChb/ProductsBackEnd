@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon server.js"
+    "start": "nodemon server.js",
+    "debug": "node-inspector --web-port=6002"
   },
   "repository": {
     "type": "git",
@@ -18,12 +19,21 @@
   },
   "homepage": "https://github.com/angular/quickstart#readme",
   "dependencies": {
+    "bcrypt": "^1.0.2",
     "body-parser": "^1.16.1",
     "cookie-parser": "^1.4.3",
     "ejs": "^2.5.6",
     "express": "^4.14.1",
+    "express-rest-response": "^1.2.0",
+    "express-session": "^1.15.1",
+    "jwt-simple": "^0.5.1",
+    "mongodb": "^2.2.24",
     "mongojs": "^2.4.0",
+    "mongoose": "^4.8.6",
     "morgan": "^1.8.1",
+    "passport": "^0.3.2",
+    "passport-jwt": "^2.2.1",
+    "passport-local": "^1.0.0",
     "path": "^0.12.7"
   },
   "devDependencies": {
